@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio de Lisa Peyron, développeuse web junior.">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/locomotive-scroll.css">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <button class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li onclick="doScroll('#presentation')">Présentation</li>
+                <li onclick="doScroll('#portfolio')">Portfolio</li>
+                <li onclick="doScroll('#competences')">Compétences</li>
+                <!-- <li onclick="doScroll('#experiences')">Expériences</li> -->
+            </ul>
+        </nav>
+        <div id="logo">
+            <img src="img/favicon.svg" alt="logo">
+        </div>
+        <button>Contact</button>
+        
+    </header>
+    <main>
+        <section id="presentation">
+            <div id="presentation-cont">
+                <div>
+                    <img src="img/logo-2.png" alt="logo" class="logo">
+                    <h1>Hello !</h1>
+                    <p>Je m'appelle <span class="key-word">Lisa Peyron</span>, j'ai 21 ans et je suis actuellement en deuxième année de bachelor média et multimédia. Passionnée depuis toujours par les sciences et les nouvelles technologies, j'ai toujours su que je voulais exercer un métier en rapport avec ces domaines. Mon envie de lier technicité et créativité m’a donné envie de découvrir le développement web. Je vous propose aujourd’hui de découvrir mon univers. </p>
+                </div>
+                <div>
+                    <img src="img/My-animal-crossing-final.png" alt="logo" class="My-animal-crossing-2">
+                </div>
+            </div>
+            <div class="button-dec">
+                <button id="decouvrir" onclick="doScroll('#portfolio')">Découvrez-moi</button>
+            </div> 
+        </section>
+        <section id="portfolio">
+            <h2>Mon portfolio</h2>
+            <article>
+                <div>
+                    <div>
+                        <h3>Memory</h3>
+                        <h4>Développement Front-end</h4>
+                        <hr>
+                        <p>Découvrez mon jeu Memory en JavaScript, fruit d'une collaboration réussie. J'ai programmé le jeu, intégré des niveaux de difficulté et résolu les défis liés aux animations sur différents navigateurs. Le projet, responsive et visuellement attrayant, reflète l'application pratique des enseignements du cours de développement front-end. Explorez le code sur GitHub pour une expérience immersive et découvrez nos compétences affinées en JavaScript.</p>
+                    </div>
+                    <div class="plus-techno-cont">
+                        <button>En savoir plus <span class="circle">+</span></button>
+                        <ul>
+                            <li><img src="img/icon/HTML.png" alt="" class="icon"></li>
+                            <li><img src="img/icon/css.png" alt="" class="icon"></li>
+                            <li><img src="img/icon/JS.png" alt="" class="icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/memory home.png">
+                </div>
+                <div id="popup1" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>Dans le cadre de mon cours de développement front-end, j'ai collaboré avec deux camarades pour créer un jeu en JavaScript, le Memory, marquant la conclusion de notre module. Ma responsabilité était la programmation, tandis que mes collègues se sont penchés sur l'aspect graphique. <br>
+                            Le jeu consiste à retourner deux cartes pour révéler un élément graphique identique sur leur face cachée. L'objectif était d'appliquer toutes les connaissances acquises en cours, en relevant des défis tels que l'intégration de niveaux de difficulté variés, de contraintes de temps et de vies, tout en assurant une intégration visuellement harmonieuse des éléments graphiques et des animations.<br>
+                            <img src="img/memory1.png" alt="">
+                            Une difficulté majeure résidait dans la gestion des animations, avec des rendus différents d'un navigateur à l'autre, nécessitant une solution adaptée. Cette a consisté a modifié mon animation pour qu’elle ait un rendu cohérent partout. <br>
+                            <video src="img/memory2.mov" autoplay muted loop></video><br>
+                            Le jeu est responsive pour garantir une accessibilité maximale. GitHub a été utilisé pour gérer les versions du code, et VS Code comme éditeur de texte. Ce projet a été l'occasion de mettre en pratique les enseignements du cours et d'affiner mes compétences en JavaScript.</p>
+                            <a href="lilipey.github.io/memory-game/"><button>Jouer</button></a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <div>
+                        <h3>Morpion</h3>
+                        <h4>Développement Front-end</h4>
+                        <hr>
+                        <p>Le projet visait à créer un jeu de morpion avec JavaScript, HTML et CSS. Les défis ont résidé dans la gestion de la grille de jeu, la détection de la victoire, et la création d'un algorithme pour l'ordinateur. Ce travail a renforcé les compétences en manipulation de données dans un tableau et en résolution de problèmes pour le développement front-end.</p>
+                    </div>
+                    <div class="plus-techno-cont">
+                        <button>En savoir plus <span class="circle">+</span></button>
+                        <ul>
+                            li><img src="img/icon/HTML.png" alt="" class="icon"></li>
+                            <li><img src="img/icon/css.png" alt="" class="icon"></li>
+                            <li><img src="img/icon/JS.png" alt="" class="icon"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/Projet morpion/grille rempli.png">
+                </div>
+                <div id="popup2" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>Dans le contexte de notre module de développement front, après quelques exercices de prise en main, nous avons dû faire un morpion. <br>
+                            <img src="img/Projet morpion/grille vide.png" alt="">
+
+                            Bien qu’ayant des règles simplistes, la mise en pratique fut très intéressante : il a fallu gérer la grille contenant les données de la partie en cours et l’afficher, détecter la condition de victoire et créer un ordi à l’aide d’un algorithme.
+                            <img src="img/Projet morpion/grille rempli.png" alt="">
+                            
+                            Une des difficultés que j’ai pu rencontrer a été de savoir comment déterminer une victoire. Après plusieurs heures de réflexion et quelques essais, j’ai trouvé une méthode pertinente qui a permis d’être optimal sur la rédaction du code :  j’ai opté pour l’utilisation d’un tableau JavaScript initié avec neuf zéros, dans laquelle chaque élément correspondait à une case créé en HTML/CSS. Chaque joueur a un numéro spécifique attribué, 1 pour le premier joueur et 7 pour le second. Une fois cliqué sur une case, le zéro correspondant dans le tableau JS est remplacé par le numéro du joueur qui vient de jouer. Et à chaque fois qu’un des deux joueurs joue son coup, une fonction avec plusieurs conditions va faire des calculs entre les éléments du tableau JS de la grille, qui équivaut à faire la somme de chaque ligne, chaque colonne et chaque diagonale. Et si le résultat d’une des sommes est égale à 3, c’est que le joueur 1 a aligné 3 jetons, de même si le résultat est 21, pour le joueur 2. <br>
+                            <img src="img/Projet morpion/tableau initié grand.png" alt="">
+                            <img src="img/Projet morpion/tableau rempli grand.png petit.png" alt="">
+                            
+                            Pour l’ordinateur, il a suffit de vérifier, dans l’ordre, si il peut gagner (somme égale à 14, car 2 jetons alignés (2**7)) ou bien si le joueur peut gagner (somme égale à 2, car 2 jetons alignés (2**1)) avec les même fonctions cités précédemment et jouer en conséquence. Dans le cas contraire, il joue un coup aléatoire sur une case vide.
+                            <img src="img/Projet morpion/condition victoire.png" alt="">
+                            Au-delà de m’exercer sur la recherche de solutions adaptées à une problématique donnée, ce projet m’a aussi permis de me rendre plus à l’aise sur la manipulation de données dans un tableau, chose dont je serai amené beaucoup faire dans l’avenir.</p>
+                            <a href=""><button>Jouer</button></a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <div>
+                        <h3>Snake</h3>
+                        <h4>Développement Front-end</h4>
+                        <hr>
+                        <p>Le projet visait à créer un jeu de snake en JavaScript, HTML et CSS. J'ai pu ainsi résoudre de nombreux défi</p>
+                    </div>
+                    <div class="plus-techno-cont">
+                        <button>En savoir plus <span class="circle">+</span></button>
+                        <ul>
+                            <li><img src="img/icon/HTML.png" alt="" class="icon"></li>
+                            <li><img src="img/icon/css.png" alt="" class="icon"></li>
+                            <li><img src="img/icon/JS.png" alt="" class="icon"></li>
+                        </ul>
+                    </div>
+                    <a href=""><button>Jouer</button></a>
+
+                </div>
+                <div class="project-image">
+                    <img src="img/Snake/Capture d’écran 2024-01-11 à 07.44.19.png">
+                </div>
+                <div id="popup3" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>Dans ce projet de jeu Snake en JavaScript, une des principales difficultés était de détecter la collision du serpent avec la pomme. Voici comment cela a été résolu dans le code :
+
+                            Détection de la collision avec la pomme :<br>
+                            La fonction moveSnake() vérifie si la tête du serpent (head) est aux mêmes coordonnées que la pomme (food). Si c'est le cas, cela signifie que le serpent a mangé la pomme, et la fonction generateFood() est appelée pour générer une nouvelle pomme à une position aléatoire.
+                            Bien qu’ayant des règles simplistes, la mise en pratique fut très intéressante : il a fallu gérer la grille contenant les données de la partie en cours et l’afficher, détecter la condition de victoire et créer un ordi à l’aide d’un algorithme.<br>
+                            <img src="img/Snake/Capture d’écran 2024-01-11 à 07.58.58.png" alt="">
+                            Génération d'une nouvelle pomme :<br>
+                            La fonction generateFood() utilise une boucle do-while pour générer une nouvelle position pour la pomme. Elle s'assure que la nouvelle position n'est ni en collision avec un obstacle ni avec le serpent lui-même.
+                            Pour l’ordinateur, il a suffit de vérifier, dans l’ordre, si il peut gagner (somme égale à 14, car 2 jetons alignés (2**7)) ou bien si le joueur peut gagner (somme égale à 2, car 2 jetons alignés (2**1)) avec les même fonctions cités précédemment et jouer en conséquence. Dans le cas contraire, il joue un coup aléatoire sur une case vide.<br>
+                            <img src="img/Snake/Capture d’écran 2024-01-11 à 08.01.05.png" alt="">
+                            Ce code assure que le joueur peut manger la pomme sans causer de collision indésirable. Les obstacles et la détection de collision avec le serpent sont également pris en compte, garantissant une expérience de jeu fluide.
+                            <img src="img/Snake/" alt="">
+                            </p>
+                            <a href="https://lilipey.github.io/Snake/"><button>Jouer</button></a>
+                    </div>
+                
+        </section>
+        <section id="competences">
+            <h2>Mes compétences</h2>
+            <div id="carousel">
+                <div id="carousel-container">
+                    <div class="carousel-item prev">
+                        <div class="item-forward">
+                            <h3>Python</h3>
+                            <img src="img/icon/Python.png" alt="image 1">
+                            <div class="progress-bar"><div class="progress" style="width: 50%;">Maîtrise : 50%</div></div>
+                        </div>
+                        <div class="item-info">
+                            <ul class="list-competence">
+                                <li>Créer des structures complexes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="item-forward">
+                            <h3>HTML</h3>
+                            <img src="img/icon/HTML.png" alt="icon HTML">
+                            <div class="progress-bar"><div class="progress" style="width: 70%;">Maîtrise : 70%</div></div>
+                        </div>
+                        <div class="item-info">
+                            <!-- <div>
+                                <div class="techno">JS</div>
+                                <div class="project-type">Front-end</div>
+                            </div>
+                            <button>Voir plus</button> -->
+                            <ul class="list-competence">
+                                <li>Créer des structures complexes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item next">
+                        <div class="item-forward">
+                            <h3>CSS</h3>
+                            <img src="img/icon/CSS.png" alt="image 1">
+                            <div class="progress-bar"><div class="progress" style="width: 80%;">Maîtrise : 80%</div></div>
+                        </div>
+                        <div class="item-info">
+                            <ul class="list-competence">
+                                <li>Créer des structures complexes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-forward">
+                            <h3>JS</h3>
+                            <img src="img/icon/JS.png" alt="image 1">
+                            <div class="progress-bar"><div class="progress" style="width: 60%;">Maîtrise : 60%</div></div>
+                        </div>
+                        <div class="item-info">
+                            <ul class="list-competence">
+                                <li>Créer des structures complexes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-forward">
+                            <h3>PHP</h3>
+                            <img src="img/icon/PHP.png" alt="image 1">
+                            <div class="progress-bar"><div class="progress" style="width: 30%;">Maîtrise : 30%</div></div>
+                        </div>
+                        <div class="item-info">
+                            <ul class="list-competence">
+                                <li>Créer des structures complexes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- wordpress -->
+                    <div class="carousel-item">
+                        <div class="item-forward">
+                            <h3>WordPress</h3>
+                            <img src="img/icon/WordPress.png" alt="image 1">
+                            <div class="progress-bar"><div class="progress" style="width: 60%;">Maîtrise : 60%</div></div>
+                        </div>
+                        <div class="item-info">
+                            <ul class="list-competence">
+                                <li>Créer des structures complexes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="previous-button"><</button>
+                    <button id="next-button">></button>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="Mes-experiences">
+            <div class="cercle-experience">
+                <div>
+                    <img src="" alt="logo-velan">
+                </div>
+                <h3>Mes experiences</h3>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <section id="footer">
+            <div id="contact-text">
+                <h1>Contact</h1>
+                <p>Vous pouvez me contacter par mail à l'adresse suivante : <a href="mailto:lili.peyron02@gmail.com">lili.peyron02@gmail.com</a></p>
+                <p>Vous pouvez également me retrouver sur :</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/lisa-peyron-2b1b3b1b9/" target="_blank"><img src="img/icon/linkedin.png" alt="logo linkedin" class="icon"></a></li>
+                    <li><a href="github.com/LisaPeyron" target="_blank"><img src="img/icon/pngegg.png" alt="logo github" class="icon"></a></li>
+            </div>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+
+    </script>
+
+</body>
+</html>
+
