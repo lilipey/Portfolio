@@ -591,3 +591,15 @@ footer {
     border-top: solid 2px var(--color-secondary);
     background-color: black;
 }
+.body-no-scroll {
+    overflow: hidden;
+}
+.list-competence{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
