@@ -1,9 +1,0 @@
-Après quelques exercices de prise en main, nous avons dû faire un morpion. 
-
-Bien qu’ayant des règles simpliste, la mise en pratique fut très intéressante : il a fallu gérer la grille contenant les données de la partie en cours et l’afficher, détecter la condition de victoire et créer un ordi à l’aide d’un algorithme. 
-
-La difficulté que j’ai rencontré a été comment déterminer une victoire. Après plusieurs heures de réflexion et quelques essais, j’ai trouvé une méthode pertinente qui a permis d’être optimal sur la rédaction du code :  j’ai opté pour l’utilisation d’un tableau JavaScript initié avec neuf zéros, dans laquelle chaque élément correspondait à une case créé en HTML/CSS. Chaque joueur à un numéro spécifique attribué, 1 pour le premier joueur et 7 pour le second. Une fois cliqué sur une case, le zéro correspondant dans le tableau JS est remplacé par le numéro du joueur qui vient de jouer. Et à chaque fois qu’un des deux joueurs joue son coup, une fonction avec plusieurs conditions va faire des calculs entre les éléments du tableau JS de la grille, qui équivaut à faire la somme de chaque ligne, chaque colonne et chaque diagonale. Et si le résultat d’une des sommes est égale à 3, c’est que le joueur 1 a aligné 3 jetons, de même si le résultat est 21, pour le joueur 2. 
-
-Pour l’ordi il a suffit de vérifier, dans l’ordre, si il peut gagner (somme égale à 14, car 2 jetons alignés (2*7)) ou bien si le joueur peut gagner (somme égale à 2, car 2 jetons alignés (2*1)) avec les même fonctions cités précédemment et jouer en conséquence. Dans le cas contraire, il joue un coup aléatoire sur une case vide.
-
-Au delà de m’exercer sur la recherche de solutions adaptées à une problématique donnée, ce projet m’a aussi permis de me rendre plus à l’aise sur la manipulation de données dans un tableau, chose dont je serai amené beaucoup faire dans l’avenir.
