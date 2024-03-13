@@ -1,9 +1,3 @@
-
-
-
-
-
-
 /*Caroussel*/
 var carouselItems = document.querySelectorAll('.carousel-item');
 var prevButton = document.querySelector('#previous-button');
@@ -17,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (item.classList.contains('active')) {
         setTimeout(function() {
           item.classList.toggle('is-flipped');
-        }, 100); // Changez ce nombre pour ajuster le délai (en millisecondes)
+        }, 100); 
       }
     });
   });
@@ -96,7 +90,10 @@ function doScroll(target) {
       behavior: 'smooth',
       block: 'start'
   });
-  document.querySelector('nav ul').classList.toggle('show');
+  if  (document.querySelector('nav ul').classList.contains('show')){
+      document.querySelector('nav ul').classList.remove('show');
+  }
+  // document.querySelector('nav ul').classList.toggle('show');
   if (document.querySelector('body').classList.contains('lock-scroll')) {
       document.querySelector('body').classList.remove('lock-scroll');
   }
@@ -108,13 +105,10 @@ var btns = document.querySelectorAll(".plus-techno-cont button");
 
 // Pour chaque bouton, ajoutez un écouteur d'événements
 btns.forEach((btn, index) => {
-    // Obtenez la pop-up correspondante
     var popup = document.getElementById("popup" + (index + 1));
 
-    // Obtenez l'élément <span> qui ferme la pop-up
     var span = popup.querySelector(".close");
 
-    // Lorsque l'utilisateur clique sur le bouton, ouvrez la pop-up 
     btn.onclick = function() {
         popup.style.display = "block";
         
