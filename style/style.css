@@ -550,15 +550,6 @@ footer li {
         justify-content: center;
     }
 }
-@media screen and (max-width:500px) {
-    .button {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-        gap: 50px;
-    }
-}
 
 /* 850px */
 @media screen and (max-width:850px) {
@@ -566,7 +557,9 @@ footer li {
     #competences {
         padding: 90px 0px 0px 0px;
     }
-
+    #carousel{
+        padding-bottom: 50px;
+    }
     #carousel-container {
         --carousel-width: min(90%, 375px);
         margin: 0;
@@ -593,10 +586,13 @@ footer li {
     }
 
     #previous-button {
-        left: calc(50% - 200px);
+        left: 50vw; 
+        transform: translate(-200%,0);
+        
     }
     #next-button {
-        left: calc(50% + 185px);
+        left: 50vw;
+        transform: translate(100%,0);
     }
 }
 
