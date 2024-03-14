@@ -49,6 +49,9 @@ prevButton.addEventListener('click', function(item) {
   carouselItems.forEach(function(item, index){
     newArray[index] = carouselItems[(index - 1 + carouselItems.length) % carouselItems.length];
     newArray[index].classList.add('transition');
+    if (item.classList.contains('is-flipped')) {
+      item.classList.remove('is-flipped');
+    }
   });
   console.log("voici l'array", newArray);
   carouselItems = newArray; // update carouselItems with the new order
@@ -67,6 +70,9 @@ nextButton.addEventListener('click', function(item) {
   activeIndex = (activeIndex + 1) % carouselItems.length;
   carouselItems.forEach(function(item, index){
     newArray[index] = carouselItems[(index + 1 + carouselItems.length) % carouselItems.length];
+    if (item.classList.contains('is-flipped')) {
+      item.classList.remove('is-flipped');
+    }
   });
   console.log("voici l'array", newArray);
   carouselItems = newArray; // update carouselItems with the new order

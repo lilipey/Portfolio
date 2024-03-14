@@ -109,7 +109,7 @@ header li:hover, a:hover, button:not(.burger-menu):hover {
     /* color: var(--color-primary); */
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    border: solid 1px var(--color-secondary);
+    border: solid 1px var(--color-secondary)    ;
 
 }
 button {
@@ -473,6 +473,18 @@ nav ul.show {
     overflow: hidden;
 }
 
+#previous-button {
+    position: absolute;
+    left: calc(50% - 227.5px);
+    transform: translateY(calc(-200px - 100%));
+}
+
+#next-button {
+    position: absolute;
+    left: calc(50% + 207.5px);
+    transform: translateY(calc(-200px - 100%));
+}
+
 /*Mes expériences*/
 #Mes-experiences {
     padding: 90px 20px 20px 20px;
@@ -578,6 +590,13 @@ footer li {
     .project-image img {
         width: 90vw !important;
         border-radius: 0;
+    }
+
+    #previous-button {
+        left: calc(50% - 200px);
+    }
+    #next-button {
+        left: calc(50% + 185px);
     }
 }
 
